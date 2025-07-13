@@ -43,28 +43,44 @@
     combos {
         compatible = "zmk,combos";
 
-        kha {
-            bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
-
-        hrdsgn {
-            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <7 8>;
-            layers = <1>;
-        };
-
         cmben {
             bindings = <&layer_en>;
-            key-positions = <2 3>;
+            key-positions = <13 14>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <2 3>;
+            key-positions = <15 16>;
             layers = <0>;
+        };
+
+        en_commma {
+            bindings = <&kp COMMA>;
+            key-positions = <16 17>;
+            layers = <0 2>;
+        };
+
+        en_dot {
+            bindings = <&kp DOT>;
+            key-positions = <13 12>;
+        };
+
+        en_semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <17 18>;
+            layers = <0 2>;
+        };
+
+        en_colon {
+            bindings = <&kp COLON>;
+            key-positions = <12 11>;
+        };
+
+        ru_E {
+            bindings = <&kp RU_CYRILLIC_E>;
+            key-positions = <16 19>;
+            layers = <1>;
         };
     };
 
@@ -72,14 +88,14 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N2))>;
+            bindings = <&kp LS(LA(N9))>;
             label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(N1))>;
+            bindings = <&kp LS(LA(NUMBER_8))>;
             label = "TO_EN";
         };
 
@@ -115,10 +131,10 @@
 
         en {
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R          &kp T                          &kp Y  &kp U         &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                          &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V          &kp B                          &kp N  &kp M         &kp COMMA     &kp DOT      &kp SQT
-                                          &kp BACKSPACE  &mo 4  &kp SPACE    &kp ENTER  &mo 2  &kp TAB
+  &kp Q        &kp W        &kp E         &kp R          &kp T                                  &kp Y        &kp U          &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F   &kp G                                  &kp H        &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V          &kp B                                  &kp N        &kp M          &kp COMMA     &kp DOT      &kp SQT
+                                          &kp BACKSPACE  &lt 2 SPACE  &lt 4 TAB    &lt 2 ENTER  &lt 4 ENTER  &kp BACKSPACE
             >;
         };
 
@@ -126,8 +142,8 @@
             bindings = <
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &kp BACKSPACE             &mo 4               &kp SPACE    &kp ENTER  &mo 3               &kp TAB
+  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
+                                                                                   &kp BACKSPACE             &lt 3 SPACE         &lt 4 TAB    &lt 3 ESC  &lt 4 ENTER         &kp BACKSPACE
             >;
         };
 
