@@ -164,6 +164,7 @@
         en_triple_grave {
             bindings = <&triple_grave>;
             key-positions = <6 7 8>;
+            layers = <0 2>;
         };
 
         ctrl_c {
@@ -202,6 +203,132 @@
             bindings = <&kp PIPE>;
             key-positions = <26 28>;
             layers = <0 2>;
+        };
+
+        ru_comma {
+            bindings = <&kp RU_COMMA>;
+            key-positions = <16 17>;
+            layers = <1 3>;
+        };
+
+        ru_dot {
+            bindings = <&kp RU_DOT>;
+            key-positions = <13 12>;
+            layers = <1 3>;
+        };
+
+        ru_semicolon {
+            bindings = <&kp RU_SEMI>;
+            key-positions = <17 18>;
+            layers = <1 3>;
+        };
+
+        ru_colon {
+            bindings = <&kp RU_COLON>;
+            key-positions = <12 11>;
+            layers = <1 3>;
+        };
+
+        ru_bslash {
+            bindings = <&kp RU_BSLH>;
+            key-positions = <18 19>;
+            layers = <1 3>;
+        };
+
+        ru_fslash {
+            bindings = <&kp RU_FSLH>;
+            key-positions = <10 11>;
+            layers = <1 3>;
+        };
+
+        ru_squote {
+            bindings = <&en LS(SQT)>;
+            key-positions = <3 4>;
+            layers = <1 3>;
+        };
+
+        ru_dquote {
+            bindings = <&kp RU_DQT>;
+            key-positions = <5 6>;
+            layers = <1 3>;
+        };
+
+        ru_plus {
+            bindings = <&kp RU_PLUS>;
+            key-positions = <1 2>;
+            layers = <1 3>;
+        };
+
+        ru_minus {
+            bindings = <&kp RU_MINUS>;
+            key-positions = <7 8>;
+            layers = <1 3>;
+        };
+
+        ru_excl {
+            bindings = <&kp RU_EXCL>;
+            key-positions = <6 7>;
+            layers = <1 3>;
+        };
+
+        ru_quest {
+            bindings = <&kp QMARK>;
+            key-positions = <3 2>;
+            layers = <1 3>;
+        };
+
+        ru_at {
+            bindings = <&en AT_SIGN>;
+            key-positions = <0 1>;
+            layers = <1 3>;
+        };
+
+        ru_hash {
+            bindings = <&en HASH>;
+            key-positions = <8 9>;
+            layers = <1 3>;
+        };
+
+        ru_lpar {
+            bindings = <&kp RU_LPAR>;
+            key-positions = <3 1>;
+            layers = <1 3>;
+        };
+
+        ru_rpar {
+            bindings = <&kp RU_RPAR>;
+            key-positions = <4 1>;
+            layers = <1 3>;
+        };
+
+        ru_grave {
+            bindings = <&en GRAVE>;
+            key-positions = <6 8>;
+            layers = <1 3>;
+        };
+
+        ru_triple_grave {
+            bindings = <&triple_grave>;
+            key-positions = <6 7 8>;
+            layers = <1 3>;
+        };
+
+        ru_lt {
+            bindings = <&en LESS_THAN>;
+            key-positions = <26 27>;
+            layers = <1 3>;
+        };
+
+        ru_gt {
+            bindings = <&en LS(GREATER_THAN)>;
+            key-positions = <27 28>;
+            layers = <1 3>;
+        };
+
+        ru_pipe {
+            bindings = <&en PIPE>;
+            key-positions = <26 28>;
+            layers = <1 3>;
         };
     };
 
@@ -277,28 +404,28 @@
 
         sym_en {
             bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp GRAVE                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                     &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &trans           &mo 5      &trans    &trans  &none      &trans
+  &kp NUMBER_6        &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9         &kp NUMBER_0                    &kp CARET  &kp LS(LEFT_BRACE)       &kp UNDER         &kp LS(RIGHT_BRACE)      &kp DLLR
+  &hml LGUI NUMBER_1  &hml LALT NUMBER_2  &hml LSHFT NUMBER_3  &hml LCTRL NUMBER_4  &kp NUMBER_5                    &kp PRCNT  &hmr RCTRL LEFT_BRACKET  &hmr RSHFT MINUS  &hmr LALT RIGHT_BRACKET  &hmr RGUI EXCL
+  &kp HASH            &kp STAR            &kp MINUS            &kp FSLH             &kp DELETE                      &kp AMPS   &kp PIPE                 &kp COMMA         &kp DOT                  &kp QMARK
+                                                               &trans               &mo 5         &trans    &trans  &none      &trans
             >;
         };
 
         sym_ru {
             bindings = <
-  &en TILDE               &en LT          &kp EQUAL         &en GT           &en GRAVE                    &en CARET  &en LBKT  &kp UNDER           &en RBKT    &en DLLR
-  &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                     &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
-  &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                     &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
-                                                            &trans           &mo 5      &trans    &trans  &none      &trans
+  &en NUMBER_6        &en NUMBER_7        &kp NUMBER_8         &en NUMBER_9         &en NUMBER_0                    &en CARET      &en LS(LEFT_BRACE)  &kp UNDER         &en LS(RIGHT_BRACE)  &en DLLR
+  &hml LGUI NUMBER_1  &hml LALT NUMBER_2  &hml LSHFT NUMBER_3  &hml LCTRL NUMBER_4  &kp NUMBER_5                    &kp PRCNT      &en LEFT_BRACKET    &hmr RSHFT MINUS  &en RIGHT_BRACKET    &hmr RGUI EXCL
+  &en HASH            &kp STAR            &kp RU_MINUS         &kp RU_FSLH          &en DEL                         &en AMPERSAND  &en LESS_THAN       &en PIPE          &en GREATER_THAN     &kp RU_QMARK
+                                                               &trans               &mo 5         &trans    &trans  &none          &trans
             >;
         };
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
-                                      &trans     &none       &trans    &trans  &mo 5            &trans
+  &kp F6        &kp F7     &kp F8     &kp F9   &kp F10                    &kp N6           &kp N7           &kp N8           &kp PAGE_UP    &kp PRINTSCREEN
+  &hml LGUI F1  &kp F2     &kp F3     &kp F4   &kp F5                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP   &hmr RGUI RIGHT
+  &layer_en     &kp LG(R)  &kp LG(E)  &kp F11  &kp F12                    &kp CAPS         &none            &kp PG_DN        &kp PAGE_DOWN  &layer_ru
+                                      &trans   &none    &trans    &trans  &mo 5            &trans
             >;
         };
 
