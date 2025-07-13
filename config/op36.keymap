@@ -156,30 +156,28 @@
         lang_en: lang_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(NUMBER_8))>, <&macro_wait_time 10>;
-
+            bindings = <&kp LA(LS(NUMBER_8))>;
             label = "LANG_EN";
         };
 
         lang_ru: lang_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(NUMBER_9))>, <&macro_wait_time 10>;
-
+            bindings = <&kp LA(LS(NUMBER_9))>;
             label = "LANG_RU";
         };
 
         switch_to_ru: switch_to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4 &lang_ru>;
+            bindings = <&lang_ru &to 4>;
             label = "SWITCH_TO_RU";
         };
 
         switch_to_en: switch_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &lang_en>;
+            bindings = <&lang_en &to 0>;
             label = "SWITCH_TO_EN";
         };
     };
