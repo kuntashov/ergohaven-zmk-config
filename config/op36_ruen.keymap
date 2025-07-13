@@ -96,7 +96,7 @@
         };
 
         en_squote {
-            bindings = <&kp LS(SQT)>;
+            bindings = <&kp SQT>;
             key-positions = <3 4>;
             layers = <0 2>;
         };
@@ -272,7 +272,7 @@
         };
 
         ru_quest {
-            bindings = <&kp QMARK>;
+            bindings = <&kp RU_QUESTION>;
             key-positions = <3 2>;
             layers = <1 3>;
         };
@@ -308,7 +308,7 @@
         };
 
         ru_triple_grave {
-            bindings = <&triple_grave>;
+            bindings = <&ru_triple_grave>;
             key-positions = <6 7 8>;
             layers = <1 3>;
         };
@@ -329,6 +329,11 @@
             bindings = <&en PIPE>;
             key-positions = <26 28>;
             layers = <1 3>;
+        };
+
+        enru_eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <1 2 3>;
         };
     };
 
@@ -378,6 +383,13 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "TRIPLE_GRAVE";
+        };
+
+        ru_triple_grave: ru_triple_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp GRAVE &kp GRAVE &kp GRAVE &to_ru>;
+            label = "RU_TRIPLE_GRAVE";
         };
     };
 
