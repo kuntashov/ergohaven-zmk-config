@@ -46,13 +46,11 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <13 14>;
-            layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <15 16>;
-            layers = <0>;
         };
 
         en_commma {
