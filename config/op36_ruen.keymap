@@ -62,6 +62,7 @@
         en_dot {
             bindings = <&kp DOT>;
             key-positions = <13 12>;
+            layers = <0 2>;
         };
 
         en_semicolon {
@@ -73,12 +74,134 @@
         en_colon {
             bindings = <&kp COLON>;
             key-positions = <12 11>;
+            layers = <0 2>;
         };
 
         ru_E {
             bindings = <&kp RU_CYRILLIC_E>;
             key-positions = <16 19>;
             layers = <1>;
+        };
+
+        en_bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <18 19>;
+            layers = <0 2>;
+        };
+
+        en_fslash {
+            bindings = <&kp FSLH>;
+            key-positions = <10 11>;
+            layers = <0 2>;
+        };
+
+        en_squote {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <3 4>;
+            layers = <0 2>;
+        };
+
+        en_dquote {
+            bindings = <&kp DQT>;
+            key-positions = <5 6>;
+            layers = <0 2>;
+        };
+
+        en_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <1 2>;
+            layers = <0 2>;
+        };
+
+        en_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+            layers = <0 2>;
+        };
+
+        en_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <6 7>;
+            layers = <0 2>;
+        };
+
+        en_quest {
+            bindings = <&kp QMARK>;
+            key-positions = <3 2>;
+            layers = <0 2>;
+        };
+
+        en_at {
+            bindings = <&kp LS(AT_SIGN)>;
+            key-positions = <0 1>;
+            layers = <0 2>;
+        };
+
+        en_hash {
+            bindings = <&kp HASH>;
+            key-positions = <8 9>;
+            layers = <0 2>;
+        };
+
+        en_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <3 1>;
+            layers = <0 2>;
+        };
+
+        en_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <4 1>;
+            layers = <0 2>;
+        };
+
+        en_grave {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <6 8>;
+            layers = <0 2>;
+        };
+
+        en_triple_grave {
+            bindings = <&triple_grave>;
+            key-positions = <6 7 8>;
+        };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 23>;
+        };
+
+        ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <22 24>;
+        };
+
+        ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <22 21>;
+        };
+
+        ctrl_z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <20 21>;
+        };
+
+        en_lt {
+            bindings = <&kp LS(LESS_THAN)>;
+            key-positions = <26 27>;
+            layers = <0 2>;
+        };
+
+        en_gt {
+            bindings = <&kp LS(GREATER_THAN)>;
+            key-positions = <27 28>;
+            layers = <0 2>;
+        };
+
+        en_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <26 28>;
+            layers = <0 2>;
         };
     };
 
@@ -121,6 +244,13 @@
                 <&macro_wait_time 10>;
 
             label = "EN";
+        };
+
+        triple_grave: triple_grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "TRIPLE_GRAVE";
         };
     };
 
