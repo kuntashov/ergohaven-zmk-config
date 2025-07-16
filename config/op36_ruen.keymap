@@ -22,7 +22,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 32 31 30 13 12 11 10>;
             hold-trigger-on-release;
         };
 
@@ -35,7 +35,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 34 35 33>;
             hold-trigger-on-release;
         };
     };
@@ -465,8 +465,8 @@
         edit {
             bindings = <
   &kp LC(LS(GRAVE))  &trans     &trans           &trans         &trans                       &trans  &trans  &trans  &trans  &trans
-  &kp LG(GRAVE)      &trans     &trans           &trans         &trans                       &trans  &trans  &trans  &trans  &trans
-  &trans             &kp LC(I)  &kp LS(LC(DOT))  &kp LS(LC(M))  &kp LC(B)                    &trans  &trans  &trans  &trans  &trans
+  &kp LG(GRAVE)      &kp HOME   &kp END          &kp ENTER      &trans                       &trans  &trans  &trans  &trans  &trans
+  &kp ESC            &kp LC(I)  &kp LS(LC(DOT))  &kp LS(LC(M))  &kp LC(B)                    &trans  &trans  &trans  &trans  &trans
                                                  &trans         &trans     &trans    &trans  &trans  &trans
             >;
         };
