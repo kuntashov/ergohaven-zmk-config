@@ -156,7 +156,7 @@
         };
 
         en_grave {
-            bindings = <&kp LS(GRAVE)>;
+            bindings = <&kp GRAVE>;
             key-positions = <6 8>;
             layers = <0 2>;
         };
@@ -501,7 +501,7 @@
             bindings = <
   &en NUMBER_6        &en NUMBER_7        &kp NUMBER_8         &en NUMBER_9         &en NUMBER_0                    &en DOLLAR     &en LS(LEFT_BRACE)  &kp UNDER         &en LS(RIGHT_BRACE)  &en CARET
   &hml LGUI NUMBER_1  &hml LALT NUMBER_2  &hml LSHFT NUMBER_3  &hml LCTRL NUMBER_4  &kp NUMBER_5                    &kp PRCNT      &en LEFT_BRACKET    &hmr RSHFT MINUS  &en RIGHT_BRACKET    &hmr RGUI EXCL
-  &kp ESC             &kp STAR            &kp RU_MINUS         &kp RU_FSLH          &en DEL                         &en AMPERSAND  &en LESS_THAN       &en PIPE          &en GREATER_THAN     &en TILDE
+  &kp ESC             &kp STAR            &kp RU_MINUS         &kp RU_FSLH          &kp DEL                         &en AMPERSAND  &en LESS_THAN       &en PIPE          &en GREATER_THAN     &en TILDE
                                                                &trans               &mo 5         &trans    &trans  &none          &trans
             >;
         };
@@ -526,10 +526,19 @@
 
         edit {
             bindings = <
-  &kp LC(LS(GRAVE))  &trans     &trans           &trans         &trans                       &trans  &trans  &trans  &trans  &trans
-  &kp LG(GRAVE)      &kp HOME   &kp END          &kp ENTER      &trans                       &trans  &trans  &trans  &trans  &trans
-  &kp ESC            &kp LC(I)  &kp LS(LC(DOT))  &kp LS(LC(M))  &kp LC(B)                    &trans  &trans  &trans  &trans  &trans
-                                                 &trans         &trans     &trans    &trans  &trans  &trans
+  &kp LC(LS(GRAVE))  &kp LG(LC(LA(LS(F22))))  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LG(LC(LA(LS(F24))))                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+  &lt 7 LG(GRAVE)    &kp HOME                 &kp END           &kp ENTER          &kp LG(LC(LA(LS(F23))))                    &out OUT_BLE  &out OUT_USB    &trans        &trans        &trans
+  &kp ESC            &kp LC(I)                &kp LS(LC(DOT))   &kp LS(LC(M))      &kp LC(B)                                  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &bootloader
+                                                                &trans             &trans                   &trans    &trans  &trans        &trans
+            >;
+        };
+
+        win+shift {
+            bindings = <
+  &trans  &trans            &kp LG(LS(UP))    &trans             &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))  &kp LG(LS(RIGHT))  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans            &trans            &trans             &trans                    &trans  &trans  &trans  &trans  &trans
+                                              &trans             &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
