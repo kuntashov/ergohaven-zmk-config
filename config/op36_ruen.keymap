@@ -384,19 +384,19 @@
         };
 
         Mouse1_L {
-            bindings = <&mkp LCLK>;
+            bindings = <&mkp MB1>;
             key-positions = <11 12>;
             layers = <4>;
         };
 
         Mouse2_Right {
-            bindings = <&mkp RCLK>;
+            bindings = <&mkp MB2>;
             key-positions = <13 12>;
             layers = <4>;
         };
 
         Mouse3_Middle {
-            bindings = <&mkp MCLK>;
+            bindings = <&mkp MB3>;
             key-positions = <1 2>;
             layers = <4>;
         };
