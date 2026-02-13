@@ -490,6 +490,66 @@
             key-positions = <4 14>;
             layers = <0 1>;
         };
+
+        F05 {
+            bindings = <&kp F5>;
+            key-positions = <15 25>;
+            layers = <0 1>;
+        };
+
+        F04 {
+            bindings = <&kp F4>;
+            key-positions = <16 26>;
+            layers = <0 1>;
+        };
+
+        F03 {
+            bindings = <&kp F3>;
+            key-positions = <27 17>;
+            layers = <0 1>;
+        };
+
+        F02 {
+            bindings = <&kp F2>;
+            key-positions = <28 18>;
+            layers = <0 1>;
+        };
+
+        F01 {
+            bindings = <&kp F1>;
+            key-positions = <19 29>;
+            layers = <0 1>;
+        };
+
+        F010 {
+            bindings = <&kp F10>;
+            key-positions = <5 15>;
+            layers = <0 1>;
+        };
+
+        F09 {
+            bindings = <&kp F9>;
+            key-positions = <6 16>;
+            layers = <0 1>;
+        };
+
+        F08 {
+            bindings = <&kp F8>;
+            key-positions = <7 17>;
+            layers = <0 1>;
+        };
+
+        F07 {
+            bindings = <&kp F7>;
+            key-positions = <8 18>;
+            layers = <0 1>;
+        };
+
+        F06 {
+            bindings = <&kp F6>;
+            key-positions = <9 19>;
+            layers = <0 1>;
+        };
     };
 
     macros {
