@@ -430,6 +430,66 @@
             key-positions = <12 11 13>;
             layers = <0 1 2 3 4>;
         };
+
+        dig_1 {
+            bindings = <&kp N1>;
+            key-positions = <20 10>;
+            layers = <0 1>;
+        };
+
+        dig_2 {
+            bindings = <&kp N2>;
+            key-positions = <21 11>;
+            layers = <0 1>;
+        };
+
+        dig_3 {
+            bindings = <&kp N3>;
+            key-positions = <22 12>;
+            layers = <0 1>;
+        };
+
+        dig_4 {
+            bindings = <&kp N4>;
+            key-positions = <23 13>;
+            layers = <0 1>;
+        };
+
+        dig_5 {
+            bindings = <&kp N5>;
+            key-positions = <24 14>;
+            layers = <0 1>;
+        };
+
+        dig_6 {
+            bindings = <&kp N6>;
+            key-positions = <0 10>;
+            layers = <0 1>;
+        };
+
+        dig_7 {
+            bindings = <&kp N7>;
+            key-positions = <11 1>;
+            layers = <0 1>;
+        };
+
+        dig_8 {
+            bindings = <&kp N8>;
+            key-positions = <12 2>;
+            layers = <0 1>;
+        };
+
+        dig_9 {
+            bindings = <&kp N9>;
+            key-positions = <13 3>;
+            layers = <0 1>;
+        };
+
+        dig_0 {
+            bindings = <&kp N0>;
+            key-positions = <4 14>;
+            layers = <0 1>;
+        };
     };
 
     macros {
