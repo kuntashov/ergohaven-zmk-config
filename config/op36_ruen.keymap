@@ -655,8 +655,8 @@
 
         en {
             bindings = <
-  &kp Q         &kp W        &kp E         &kp R         &kp T                                &kp Y        &kp U          &kp I         &kp O        &kp P
-  &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                &kp H        &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RCTRL SEMI
+  &kp Q         &kp W        &kp E         &kp R         &hml F24 T                           &kp Y        &kp U          &kp I         &lt 7 O      &kp P
+  &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &hml F23 G                           &kp H        &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &lt 7 SEMI
   &hml LWIN Z   &kp X        &kp C         &kp V         &kp B                                &kp N        &kp M          &kp COMMA     &kp DOT      &hmr RWIN SQT
                                            &lt 6 DELETE  &lt 2 SPACE  &lt 4 TAB    &lt 2 ESC  &lt 4 ENTER  &kp BACKSPACE
             >;
@@ -666,10 +666,10 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
-  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RCTRL RU_CYRILLIC_ZHE
-  &hml LWIN RU_CYRILLIC_YA   &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &hmr RWIN RU_CYRILLIC_HA
-                                                                                    &lt 6 DEL                 &lt 3 SPACE         &lt 4 TAB    &lt 3 ESC  &lt 4 ENTER         &kp BACKSPACE
+  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &hml F24 RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &lt 7 RU_CYRILLIC_SHCHA   &kp RU_CYRILLIC_ZE
+  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &hml F23 RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &lt 7 RU_CYRILLIC_ZHE
+  &hml LWIN RU_CYRILLIC_YA   &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &hmr RWIN RU_CYRILLIC_HA
+                                                                                    &lt 6 DEL                 &lt 3 SPACE              &lt 4 TAB    &lt 3 ESC  &lt 4 ENTER         &kp BACKSPACE
             >;
 
             display-name = "Ru";
@@ -699,7 +699,7 @@
 
         nav {
             bindings = <
-  &kp F6    &kp F7     &kp F8     &kp F9   &kp F10                    &kp RG(RA(F7))  &kp RG(RA(F6))  &kp RG(RA(F5))  &kp PAGE_UP    &kp PRINTSCREEN
+  &kp F6    &kp F7     &kp F8     &kp F9   &kp F10                    &kp RG(LA(F7))  &kp RG(LA(F6))  &kp RG(LA(F5))  &kp PAGE_UP    &kp PRINTSCREEN
   &kp F1    &kp F2     &kp F3     &kp F4   &kp F5                     &kp LEFT        &kp DOWN        &kp UP_ARROW    &kp RIGHT      &kp ESC
   &kp LWIN  &kp LG(R)  &kp LG(E)  &kp F11  &kp F12                    &kp CAPS        &kp HOME        &kp END         &kp PAGE_DOWN  &kp RWIN
                                   &trans   &none    &trans    &trans  &mo 5           &trans
@@ -728,12 +728,12 @@
             >;
         };
 
-        win+shift {
+        win {
             bindings = <
-  &trans  &trans            &kp LG(LS(UP))    &trans             &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))  &kp LG(LS(RIGHT))  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans            &trans            &trans             &trans                    &trans  &trans  &trans  &trans  &trans
-                                              &trans             &trans  &trans    &trans  &trans  &trans
+  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)                                                  &trans  &kp LCTRL  &kp LEFT_SHIFT  &trans  &trans
+  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)                                                  &trans  &trans     &trans          &trans  &kp LEFT_ALT
+  &trans      &trans      &trans      &trans      &trans                                                      &trans  &trans     &trans          &trans  &trans
+                                      &trans      &hml LEFT_SHIFT RG(LA(SPACE))  &trans    &kp RG(LA(SPACE))  &trans  &trans
             >;
         };
     };
