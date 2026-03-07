@@ -46,7 +46,6 @@
             bindings = <&lm>, <&kp>;  // hold ПЕРВЫЙ, tap ВТОРОЙ
             tapping-term-ms = <200>;
             flavor = "balanced";
-            label = "LT_LM";
         };
     };
 
@@ -676,7 +675,7 @@
 
         en {
             bindings = <
-  &kp Q         &kp W        &kp E         &kp R         &hml F24 T                           &kp Y        &kp U          &kp I         &lt_lm 2 LGUI O   &kp P
+  &kp Q         &kp W        &kp E         &kp R         &hml F24 T                           &kp Y        &kp U          &kp I         &lt_lm 2 LGUI O         &kp P
   &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &hml F23 G                           &kp H        &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &lt 7 SEMI
   &hml LWIN Z   &kp X        &kp C         &kp V         &kp B                                &kp N        &kp M          &kp COMMA     &kp DOT      &hmr RWIN SQT
                                            &lt 6 DELETE  &lt 2 SPACE  &lt 4 TAB    &lt 2 ESC  &lt 4 ENTER  &kp BACKSPACE
@@ -687,7 +686,7 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &hml F24 RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &lt_lm 2 LGUI RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE
+  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &hml F24 RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &lt_lm 2 LGUI RU_CYRILLIC_SHCHA        &kp RU_CYRILLIC_ZE
   &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &hml F23 RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE    &lt 7 RU_CYRILLIC_ZHE
   &hml LWIN RU_CYRILLIC_YA   &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU          &hmr RWIN RU_CYRILLIC_HA
                                                                                     &lt 6 DEL                 &lt 3 SPACE              &lt 4 TAB    &lt 3 ESC  &lt 4 ENTER         &kp BACKSPACE
