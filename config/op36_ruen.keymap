@@ -42,7 +42,7 @@
 
         lt_lm: lt_lm {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <3>;
             bindings = <&lm>, <&kp>;  // hold ПЕРВЫЙ, tap ВТОРОЙ
             tapping-term-ms = <200>;
             flavor = "balanced";
