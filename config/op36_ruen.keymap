@@ -56,7 +56,7 @@
 
         // Создаем универсальный Hold-Tap для 8-го слоя
 
-        ht_mo8: ht_mo8 {
+        ht_mo7: ht_mo7 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -64,7 +64,7 @@
 
             // На Hold срабатывает наш макрос, на Tap - обычная кнопка
 
-            bindings = <&mo8_mod>, <&kp>;
+            bindings = <&mo7_mod>, <&kp>;
         };
     };
 
@@ -576,7 +576,7 @@
 
         // Макрос принимает 1 параметр (код модификатора)
 
-        mo8_mod: mo8_mod {
+        mo7_mod: mo7_mod {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             wait-ms = <0>;
@@ -586,10 +586,10 @@
                 <&macro_press>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_press>,
-                <&mo 8>,
+                <&mo 7>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 8 &macro_param_1to1>,
+                <&mo 7 &macro_param_1to1>,
                 <&macro_release>,
                 <&kp MACRO_PLACEHOLDER>;
         };
@@ -600,8 +600,8 @@
 
         en {
             bindings = <
-  &kp Q         &kp W        &kp E         &kp R         &kp T                                &kp Y        &ht_mo8 LCTRL U  &ht_mo8 LSHIFT I  &ht_mo8 LGUI O  &ht_mo_win 0 P
-  &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                &kp H        &hmr RCTRL J     &hmr RSHFT K      &hmr LALT L     &ht_mo8 LALT SEMI
+  &kp Q         &kp W        &kp E         &kp R         &kp T                                &kp Y        &ht_mo7 LCTRL U  &ht_mo7 LSHIFT I  &ht_mo7 LGUI O  &ht_mo_win 0 P
+  &hml LCTRL A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                &kp H        &hmr RCTRL J     &hmr RSHFT K      &hmr LALT L     &ht_mo7 LALT SEMI
   &hml LWIN Z   &kp X        &kp C         &kp V         &kp B                                &kp N        &kp M            &kp COMMA         &kp DOT         &hmr RWIN SQT
                                            &lt 6 DELETE  &lt 2 SPACE  &lt 4 TAB    &lt 2 ESC  &lt 4 ENTER  &kp BACKSPACE
             >;
@@ -611,8 +611,8 @@
 
         ru {
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &ht_mo8 LCTRL RU_CYRILLIC_GHE  &ht_mo8 LSHIFT RU_CYRILLIC_SHA  &ht_mo8 LGUI RU_CYRILLIC_SHCHA  &ht_mo_win 0 RU_CYRILLIC_ZE
-  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O       &hmr RSHFT RU_CYRILLIC_EL       &hmr LALT RU_CYRILLIC_DE        &ht_mo8 LALT RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_SHORT_I    &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &ht_mo7 LCTRL RU_CYRILLIC_GHE  &ht_mo7 LSHIFT RU_CYRILLIC_SHA  &ht_mo7 LGUI RU_CYRILLIC_SHCHA  &ht_mo_win 0 RU_CYRILLIC_ZE
+  &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O       &hmr RSHFT RU_CYRILLIC_EL       &hmr LALT RU_CYRILLIC_DE        &ht_mo7 LALT RU_CYRILLIC_ZHE
   &hml LWIN RU_CYRILLIC_YA   &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &kp RU_CYRILLIC_BE              &kp RU_CYRILLIC_YU              &hmr RWIN RU_CYRILLIC_HA
                                                                                     &lt 6 DEL                 &lt 3 SPACE         &lt 4 TAB    &lt 3 ESC  &lt 4 ENTER         &kp BACKSPACE
             >;
